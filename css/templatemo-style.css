@@ -177,6 +177,7 @@ footer {
 
 .bg-yellow {
   background: #e3ae57;
+  
 }
 
 .bg-white {
@@ -393,11 +394,6 @@ a:focus {
 /*---------------------------------------
    About section              
 -----------------------------------------*/
-
-#about .about-img {
-  /* background: url("../images/contact-img.JPG") no-repeat; */
-  background-position: 10% 50%;
-}
 
 #about .about-thumb,
 #about .skill-thumb {
@@ -692,6 +688,7 @@ footer {
   #contact .col-md-3 {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 
   .background-image {
@@ -1175,7 +1172,7 @@ img {
   .cards { grid-template-columns: repeat(3, 1fr); }
 }
 
-.row {
+.galrow {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -1184,14 +1181,14 @@ img {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
+.galcolumn {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
-.column img {
+.galcolumn img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -1199,7 +1196,7 @@ img {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
+  .galcolumn {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
@@ -1208,9 +1205,64 @@ img {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .galcolumn {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
 }
+
+.socialrow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.socialcolumn {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 5px;
+}
+
+.socialcolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .socialcolumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .socialcolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+}
+
+.facebook-responsive {
+  overflow:hidden;
+  padding-bottom:62.25%;
+  position:relative;
+  height:0;
+  }
+  .facebook-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
